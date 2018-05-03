@@ -15,7 +15,7 @@ import java.util.List;
 public class ExampleTest {
 
     CucumberEnvironment environment = new CucumberEnvironment();
-    DefinicionSteps definicionSteps = new DefinicionSteps(environment);
+    DefinicionSteps definicionSteps = new Defi nicionSteps(environment);
 
 
     public ExampleTest() {}
@@ -27,7 +27,7 @@ public class ExampleTest {
         definicionSteps.voyALaUrl(googlePath);
     }
 
-    @When("^Busco la palabra Ceiba$")
+    /* @When("^Busco la palabra Ceiba$")
     public void busco_la_palabra_Ceiba() throws IOException {
         WebElement campoBusqueda = environment.getDriver().findElement(By.id("lst-ib"));
 
@@ -62,5 +62,5 @@ public class ExampleTest {
         environment.getScenario().embed(screenshot, "image/png");
 
 
-    }
+    } */
 }
