@@ -15,7 +15,7 @@ import java.util.List;
 public class ExampleTest {
 
     CucumberEnvironment environment = new CucumberEnvironment();
-    DefinicionSteps definicionSteps = new Defi nicionSteps(environment);
+    DefinicionSteps definicionSteps = new DefinicionSteps(environment);
 
 
     public ExampleTest() {}
@@ -27,40 +27,15 @@ public class ExampleTest {
         definicionSteps.voyALaUrl(googlePath);
     }
 
-    /* @When("^Busco la palabra Ceiba$")
+    @When("^Busco la palabra Ceiba$")
     public void busco_la_palabra_Ceiba() throws IOException {
-        WebElement campoBusqueda = environment.getDriver().findElement(By.id("lst-ib"));
 
-        File scrFile = ((TakesScreenshot)environment.getDriver()).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(scrFile, new File(".\\tmp\\screenshot2.png"));
-
-        campoBusqueda.clear();
-
-        campoBusqueda.sendKeys("ceiba software");
-        campoBusqueda.sendKeys(Keys.ENTER);
-
-        scrFile = ((TakesScreenshot)environment.getDriver()).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(scrFile, new File(".\\tmp\\screenshot2.png"));
-
-        byte[] screenshot = ((TakesScreenshot)environment.getDriver()).getScreenshotAs(OutputType.BYTES);
-        environment.getScenario().embed(screenshot, "image/png");
-
-        WebElement botonBusqueda = environment.getDriver().findElement(By.name("btnK"));
-        botonBusqueda.click();
     }
 
     @Then("^Aparece la pagina web de Ceiba$")
     public void aparece_la_pagina_web_de_Ceiba() throws IOException {
 
-        WebElement vinculoCeiba = environment.getDriver().findElement(By.linkText("Ceiba Software"));
-        Assert.assertNotNull(vinculoCeiba);
-
-        File scrFile = ((TakesScreenshot)environment.getDriver()).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(scrFile, new File(".\\tmp\\screenshot3.png"));
-
-        byte[] screenshot = ((TakesScreenshot)environment.getDriver()).getScreenshotAs(OutputType.BYTES);
-        environment.getScenario().embed(screenshot, "image/png");
 
 
-    } */
+    }
 }
