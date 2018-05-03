@@ -33,14 +33,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExampleTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ExampleTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/co/com/prueba/steps/ExampleTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
+            <state relative-caret-position="53">
+              <caret line="47" column="49" lean-forward="true" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExampleTest.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resource/features/ExampleTest.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Jenkinsfile" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Jenkinsfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -88,6 +106,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -403,6 +424,7 @@
         <option value="$PROJECT_DIR$/src/test/java/co/com/prueba/steps/CucumberEnvironment.java" />
         <option value="$PROJECT_DIR$/src/test/java/co/com/prueba/steps/DefinicionSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/co/com/prueba/steps/ExampleTest.java" />
+        <option value="$PROJECT_DIR$/Jenkinsfile" />
       </list>
     </option>
   </component>
@@ -412,6 +434,7 @@
     <option name="width" value="1448" />
     <option name="height" value="908" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -424,73 +447,6 @@
             <path>
               <item name="prueba" type="b2602c69:ProjectViewProjectNode" />
               <item name="prueba" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="prueba" type="b2602c69:ProjectViewProjectNode" />
-              <item name="prueba" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="prueba" type="b2602c69:ProjectViewProjectNode" />
-              <item name="prueba" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="prueba" type="b2602c69:ProjectViewProjectNode" />
-              <item name="prueba" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="prueba" type="b2602c69:ProjectViewProjectNode" />
-              <item name="prueba" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="prueba" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="prueba" type="b2602c69:ProjectViewProjectNode" />
-              <item name="prueba" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="prueba" type="462c0819:PsiDirectoryNode" />
-              <item name="runner" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="prueba" type="b2602c69:ProjectViewProjectNode" />
-              <item name="prueba" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="prueba" type="462c0819:PsiDirectoryNode" />
-              <item name="steps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="prueba" type="b2602c69:ProjectViewProjectNode" />
-              <item name="prueba" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resource" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="prueba" type="b2602c69:ProjectViewProjectNode" />
-              <item name="prueba" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resource" type="462c0819:PsiDirectoryNode" />
-              <item name="drivers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="prueba" type="b2602c69:ProjectViewProjectNode" />
-              <item name="prueba" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resource" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="prueba" type="b2602c69:ProjectViewProjectNode" />
@@ -691,13 +647,13 @@
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.37195995" side_tool="true" visible="true" weight="0.34691197" />
       <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.6280401" visible="true" weight="0.34691197" />
-      <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.6280401" visible="true" weight="0.34691197" />
+      <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3297568" />
       <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49928468" weight="0.3298292" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49803922" visible="true" weight="0.25107297" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.49803922" visible="true" weight="0.25107297" />
       <window_info anchor="bottom" id="Build" order="3" sideWeight="0.49928468" weight="0.38633376" />
       <window_info anchor="bottom" id="Find" order="6" />
       <window_info anchor="right" id="Gradle" order="1" />
@@ -751,13 +707,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tmp/screenshot2.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resource/features/ExampleTest.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-        </state>
-      </provider>
     </entry>
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_161/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -834,11 +783,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/co/com/prueba/steps/ExampleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
+        <state relative-caret-position="53">
+          <caret line="47" column="49" lean-forward="true" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resource/features/ExampleTest.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jenkinsfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
         </state>
       </provider>
     </entry>
