@@ -1,6 +1,6 @@
 pipeline {
    agent{
-       label 'ServidorGrafico'
+       label 'any'
    }
 
     triggers{
