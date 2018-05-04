@@ -9,3 +9,4 @@ Feature: Tests de Ejemplo
     [32mWhen [0m[32mBusco la palabra Ceiba[0m                   [90m# ExampleTest.busco_la_palabra_Ceiba()[0m
     [32mAnd [0m[32mTomo un screenshot[0m                        [90m# DefinicionSteps.tomoUnScreenshot()[0m
     [32mThen [0m[32mAparece la pagina web de Ceiba[0m           [90m# ExampleTest.aparece_la_pagina_web_de_Ceiba()[0m
+    [32mAnd [0m[32mTomo un screenshot[0m                        [90m# DefinicionSteps.tomoUnScreenshot()[0m

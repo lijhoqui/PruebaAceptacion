@@ -64,6 +64,17 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "Tomo un screenshot",
+  "keyword": "And "
+});
+formatter.embedding("image/png", "embedded2.png");
+formatter.match({
+  "location": "DefinicionSteps.tomoUnScreenshot()"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.after({
   "status": "passed"
 });
