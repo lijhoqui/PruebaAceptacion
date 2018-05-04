@@ -51,18 +51,31 @@ pipeline {
                   currentBuild.result = 'SUCCESS'
               }
            }
-            publishHTML target: [
-                       allowMissing: true,
-                       alwaysLinkToLastBuild: false,
-                       keepAll: true,
-                       reportDir: 'build\\reports\\tests\\accepttest',
-                       reportFiles: 'index.html',
-                       reportName: 'Reporte de Pruebas',
-                       reportTitles: ''
-                     ]
 
-           cucumber 'build/reports/tests/accepttest/json/cucumber.json'
-           step([$class: 'Mailer', notifyEveryUnstableBuild: true, recipients: 'lina.quintero@ceiba.com.co', sendToIndividuals: true])
+       }
+       sucess{
+             echo 'This will run only if successful'
+              publishHTML target: [
+                                    allowMissing: true,
+                                    alwaysLinkToLastBuild: false,
+                                    keepAll: true,
+                                    reportDir: 'build\\reports\\tests\\accepttest',
+                                    reportFiles: 'index.html',
+                                    reportName: 'Reporte de Pruebas',
+                                    reportTitles: ''
+                                  ]
+
+
+       }
+        failure {
+              echo 'This will run only if failed'
+              //send notifications about a Pipeline to an email
+              mail (to: 'lina.quintero@ceiba.com.co',
+              subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
+              body: "Something is wrong ")
+       }
+       unstable {
+         echo 'This will run only if the run was marked as unstable'
        }
    }
 }
