@@ -57,8 +57,8 @@ pipeline {
                        keepAll: true,
                        reportDir: 'build\\reports\\tests\\prueba',
                        reportFiles: 'index.html',
-                       repor
-           
+                       reportName: 'Tests Report - buildSrc']
+         
            step([$class: 'Mailer', notifyEveryUnstableBuild: true, recipients: 'lina.quintero@ceiba.com.co', sendToIndividuals: true])
        }
    }
