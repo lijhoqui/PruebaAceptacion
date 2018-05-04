@@ -7,6 +7,8 @@ import cucumber.api.java.en.When;
 import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.io.IOException;
@@ -28,7 +30,10 @@ public class ExampleTest {
     public void busco_la_palabra_Ceiba() throws IOException {
         WebElement campoBusqueda = driver.findElement(By.id("lst-ib"));
         campoBusqueda.clear();
-        
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        campoBusqueda.sendKeys("ceiba software");
+        wait.until(ExpectedConditions.visibilityOf(campoBusqueda));
+        campoBusqueda.sendKeys(Keys.TAB);
     }
 
     @Then("^Aparece la pagina web de Ceiba$")
