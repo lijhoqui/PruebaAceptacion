@@ -24,23 +24,17 @@ public class ExampleTest {
         this.definicionSteps = new DefinicionSteps(environment);
     }
 
-
-    @Given("^Cargo la pagina de Google$")
-    public void cargo_la_pagina_de_Google() {
-        String googlePath = "http://www.google.com";
-        definicionSteps.voyALaUrl(googlePath);
-        definicionSteps.tomoUnScreenshot();
-    }
-
     @When("^Busco la palabra Ceiba$")
     public void busco_la_palabra_Ceiba() throws IOException {
-
+        WebElement campoBusqueda = driver.findElement(By.id("lst-ib"));
+        campoBusqueda.clear();
+        campoBusqueda.sendKeys("ceiba software");   
+        campoBusqueda.sendKeys(Keys.TAB);
     }
 
     @Then("^Aparece la pagina web de Ceiba$")
     public void aparece_la_pagina_web_de_Ceiba() throws IOException {
-
-
-
+        WebElement botonBusqueda = driver.findElement(By.name("btnK"));
+        botonBusqueda.click();
     }
 }

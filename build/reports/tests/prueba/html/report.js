@@ -13,12 +13,22 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "Cargo la pagina de Google",
+  "name": "Voy a la pagina \"http://www.google.com\"",
   "keyword": "Given "
+});
+formatter.match({
+  "location": "DefinicionSteps.voyALaUrl(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Tomo un screenshot",
+  "keyword": "And "
 });
 formatter.embedding("image/png", "embedded0.png");
 formatter.match({
-  "location": "ExampleTest.cargo_la_pagina_de_Google()"
+  "location": "DefinicionSteps.tomoUnScreenshot()"
 });
 formatter.result({
   "status": "passed"
@@ -29,6 +39,17 @@ formatter.step({
 });
 formatter.match({
   "location": "ExampleTest.busco_la_palabra_Ceiba()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Tomo un screenshot",
+  "keyword": "And "
+});
+formatter.embedding("image/png", "embedded1.png");
+formatter.match({
+  "location": "DefinicionSteps.tomoUnScreenshot()"
 });
 formatter.result({
   "status": "passed"

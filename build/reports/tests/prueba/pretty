@@ -3,7 +3,9 @@ Feature: Tests de Ejemplo
     Quiero
     Para
 
-  Scenario: Hacer una busqueda en Google [90m# src/test/resource/features/ExampleTest.feature:6[0m
-    [32mGiven [0m[32mCargo la pagina de Google[0m      [90m# ExampleTest.cargo_la_pagina_de_Google()[0m
-    [32mWhen [0m[32mBusco la palabra Ceiba[0m          [90m# ExampleTest.busco_la_palabra_Ceiba()[0m
-    [32mThen [0m[32mAparece la pagina web de Ceiba[0m  [90m# ExampleTest.aparece_la_pagina_web_de_Ceiba()[0m
+  Scenario: Hacer una busqueda en Google          [90m# src/test/resource/features/ExampleTest.feature:6[0m
+    [32mGiven [0m[32mVoy a la pagina "[0m[32m[1mhttp://www.google.com[0m[32m"[0m [90m# DefinicionSteps.voyALaUrl(String)[0m
+    [32mAnd [0m[32mTomo un screenshot[0m                        [90m# DefinicionSteps.tomoUnScreenshot()[0m
+    [32mWhen [0m[32mBusco la palabra Ceiba[0m                   [90m# ExampleTest.busco_la_palabra_Ceiba()[0m
+    [32mAnd [0m[32mTomo un screenshot[0m                        [90m# DefinicionSteps.tomoUnScreenshot()[0m
+    [32mThen [0m[32mAparece la pagina web de Ceiba[0m           [90m# ExampleTest.aparece_la_pagina_web_de_Ceiba()[0m
