@@ -15,7 +15,7 @@ pipeline {
 
        stage('Checkout'){
            steps{
-
+               bat 'echo "Se inicia el Checkout"'
               checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/lijhoqui/PruebaAceptacion']]])
 
            }
@@ -57,8 +57,9 @@ pipeline {
                        keepAll: true,
                        reportDir: 'build\\reports\\tests\\prueba',
                        reportFiles: 'index.html',
-                       reportName: 'Tests Report - buildSrc']
-         
+                       reportName: 'Tests Repor']
+
+            cucumber 'build/reports/tests/accepttest/json/cucumber.json'
            step([$class: 'Mailer', notifyEveryUnstableBuild: true, recipients: 'lina.quintero@ceiba.com.co', sendToIndividuals: true])
        }
    }
