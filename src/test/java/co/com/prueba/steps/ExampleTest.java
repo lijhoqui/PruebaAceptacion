@@ -28,7 +28,7 @@ public class ExampleTest {
     public void busco_la_palabra_Ceiba() throws IOException {
         WebElement campoBusqueda = driver.findElement(By.id("lst-ib"));
         campoBusqueda.clear();
-        campoBusqueda.sendKeys("ceiba software");   
+        campoBusqueda.sendKeys("ceiba software");
         campoBusqueda.sendKeys(Keys.TAB);
     }
 
