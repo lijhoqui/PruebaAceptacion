@@ -52,7 +52,7 @@ pipeline {
               }
            }
 
-       }
+
        sucess{
              echo 'This will run only if successful'
               publishHTML target: [
