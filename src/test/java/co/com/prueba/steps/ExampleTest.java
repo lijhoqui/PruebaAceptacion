@@ -14,17 +14,22 @@ import java.util.List;
 
 public class ExampleTest {
 
-    CucumberEnvironment environment = new CucumberEnvironment();
-    DefinicionSteps definicionSteps = new DefinicionSteps(environment);
+    private WebDriver driver;
+    private CucumberEnvironment environment;
+    private DefinicionSteps definicionSteps;
 
-
-    public ExampleTest() {}
+    public ExampleTest(CucumberEnvironment environment) {
+        this.environment = environment;
+        this.driver = environment.getDriver();
+        this.definicionSteps = new DefinicionSteps(environment);
+    }
 
 
     @Given("^Cargo la pagina de Google$")
     public void cargo_la_pagina_de_Google() {
         String googlePath = "http://www.google.com";
         definicionSteps.voyALaUrl(googlePath);
+        definicionSteps.tomoUnScreenshot();
     }
 
     @When("^Busco la palabra Ceiba$")

@@ -1,6 +1,9 @@
 package co.com.prueba.steps;
 
+import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -23,6 +26,12 @@ public class DefinicionSteps {
 
     private void irALaUrl(String url) {
         driver.get(url);
+    }
+
+    @Then("^Tomo un screenshot$")
+    public void tomoUnScreenshot() {
+        byte[] screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
+        environment.getScenario().embed(screenshot, "image/png");
     }
 
 
