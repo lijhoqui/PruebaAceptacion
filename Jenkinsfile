@@ -51,9 +51,18 @@ pipeline {
                   currentBuild.result = 'SUCCESS'
               }
            }
-           publishHTML([allowMissing: true, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'build\\reports\\tests\\accepttest', reportFiles: 'index.html', reportName: 'Reporte de Pruebas', reportTitles: ''])
+            publishHTML target: [
+                       allowMissing: true,
+                       alwaysLinkToLastBuild: false,
+                       keepAll: true,
+                       reportDir: 'build\\reports\\tests\\accepttest',
+                       reportFiles: 'index.html',
+                       reportName: 'Reporte de Pruebas',
+                       reportTitles: ''
+                     ]
+
            cucumber 'build/reports/tests/accepttest/json/cucumber.json'
-           step([$class: 'Mailer', notifyEveryUnstableBuild: true, recipients: 'ana.franco@ceiba.com.co', sendToIndividuals: true])
+           step([$class: 'Mailer', notifyEveryUnstableBuild: true, recipients: 'lina.quintero@ceiba.com.co', sendToIndividuals: true])
        }
    }
 }
