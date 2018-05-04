@@ -7,3 +7,11 @@ Feature: Tests de Ejemplo
     [32mGiven [0m[32mCargo la pagina de Google[0m      [90m# ExampleTest.cargo_la_pagina_de_Google()[0m
     [32mWhen [0m[32mBusco la palabra Ceiba[0m          [90m# ExampleTest.busco_la_palabra_Ceiba()[0m
     [32mThen [0m[32mAparece la pagina web de Ceiba[0m  [90m# ExampleTest.aparece_la_pagina_web_de_Ceiba()[0m
+
+Feature: Tests de Inicio de Sesion
+  Como un Usuario
+  Quiero
+  Para
+
+  Scenario: Hacer un ingreso a la pagina University [90m# src/test/resource/features/IniciarSesion.feature:6[0m
+    [32mGiven [0m[32mcargo la pagina University[0m                [90m# IniciarSesion.cargo_la_pagina_University()[0m

@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 2993522555,
+              "duration": 2615196799,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 1247192160,
+              "duration": 1197826878,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4236849253,
+              "duration": 4358060824,
               "status": "passed"
             },
             "line": 7,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 209711,
+              "duration": 216895,
               "status": "passed"
             },
             "line": 8,
@@ -58,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 217579,
+              "duration": 249053,
               "status": "passed"
             },
             "line": 9,
@@ -76,6 +76,61 @@
     "id": "tests-de-ejemplo",
     "keyword": "Feature",
     "uri": "src/test/resource/features/ExampleTest.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1382772121,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberEnvironment.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Hacer un ingreso a la pagina University",
+        "description": "",
+        "id": "tests-de-inicio-de-sesion;hacer-un-ingreso-a-la-pagina-university",
+        "after": [
+          {
+            "result": {
+              "duration": 1310343966,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberEnvironment.dispose()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3967127095,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "cargo la pagina University",
+            "match": {
+              "location": "IniciarSesion.cargo_la_pagina_University()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      }
+    ],
+    "name": "Tests de Inicio de Sesion",
+    "description": "  Como un Usuario\n  Quiero\n  Para",
+    "id": "tests-de-inicio-de-sesion",
+    "keyword": "Feature",
+    "uri": "src/test/resource/features/IniciarSesion.feature",
     "tags": []
   }
 ]
