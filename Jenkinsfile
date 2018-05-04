@@ -59,7 +59,7 @@ pipeline {
                        reportFiles: 'index.html',
                        reportName: 'Tests Repor']
 
-            cucumber 'build/reports/tests/accepttest/json/cucumber.json'
+            cucumber 'build/reports/tests/prueba/json/cucumber.json'
            step([$class: 'Mailer', notifyEveryUnstableBuild: true, recipients: 'lina.quintero@ceiba.com.co', sendToIndividuals: true])
        }
    }
