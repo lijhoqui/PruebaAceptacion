@@ -32,6 +32,13 @@ pipeline {
                bat 'gradlew accepttest'
            }
        }
+	   
+	   stage('SonarQube analysis') {
+		    steps{
+               bat 'gradlew --info sonarqube'
+            }
+		
+	    }
 
        stage('Despliegue'){
            when {
