@@ -39,7 +39,7 @@ pipeline {
             steps{
 				echo '------------>Sonar Analysis<------------'
 				 withSonarQubeEnv('sonarqube') {
-                         sh "${tool name: 'sonarScanner', type: 'hudson.plugins.sonar.SonarRunnerInstallation'}/bin/sonar-scanner"
+                         bat "${tool name: 'sonarScanner', type: 'hudson.plugins.sonar.SonarRunnerInstallation'}/bin/sonar-scanner"
                       }
 				}
             }
