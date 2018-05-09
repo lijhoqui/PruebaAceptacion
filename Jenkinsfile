@@ -35,16 +35,25 @@ pipeline {
        }
 	   
 
+        stage('Sonar Analysis') {
+            steps{
+				echo '------------>Sonar Analysis<------------'
+				 withSonarQubeEnv('sonarqube') {
+                         sh "${tool name: 'sonarScanner', type: 'hudson.plugins.sonar.SonarRunnerInstallation'}/bin/sonar-scanner"
+                      }
+				}
+            }
+        }*/
 
 	     stage('Publish') {
             steps{
                 echo '------------>Publish [Artifactory]<------------'
                 script{ //takes a block of Scripted Pipeline and executes that in the Declarative Pipeline
-                    def server = Artifactory.server 'http://localhost:8081/artifactory'
+                    def server = Artifactory.server 'ArtifactoryICCD'
                     def uploadSpec = '''
                         {"files": [{
                         "pattern": "**/gradle/wrapper/*.jar",
-                        "target": "libs-release-local/$JOB_NAME/build/"
+                        "target": "example-repo-local/$JOB_NAME/build/"
                         }]}'''
 
                     def buildInfo = server.upload(uploadSpec)
