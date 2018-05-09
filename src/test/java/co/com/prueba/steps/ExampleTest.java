@@ -12,14 +12,10 @@ import java.io.IOException;
 public class ExampleTest {
 
     private WebDriver driver;
-    private CucumberEnvironment environment;
-    private DefinicionSteps definicionSteps;
 
     public ExampleTest(CucumberEnvironment environment) {
-        this.environment = environment;
-        this.driver = environment.getDriver();
-        this.definicionSteps = new DefinicionSteps(environment);
-    }
+               this.driver = environment.getDriver();
+           }
 
     @When("^Busco la palabra Ceiba$")
     public void busco_la_palabra_Ceiba() throws IOException {
