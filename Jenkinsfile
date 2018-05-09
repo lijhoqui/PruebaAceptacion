@@ -29,16 +29,38 @@ pipeline {
 
        stage('Pruebas aceptacion'){
            steps{
-               bat 'gradlew accepttest'
+                echo '------------>Pruebas aceptacion<------------'
+                bat 'gradlew accepttest'
            }
        }
 	   
 	   stage('SonarQube analysis') {
 		    steps{
-               bat 'gradlew --info sonarqube'
+		        echo '------------>Analisis de código estático<------------'
+                withSonarQubeEnv('Sonar') {
+                      sh "${tool name: 'SonarScanner', type: 'hudson.plugins.sonar.SonarRunnerInstallation'}/bin/sonar-scanner -Dproject.settings=./sonar.properties"
+                }
+
             }
 		
 	    }
+
+	     stage('Publish') {
+            steps{
+                echo '------------>Publish [Artifactory]<------------'
+                script{ //takes a block of Scripted Pipeline and executes that in the Declarative Pipeline
+                    def server = Artifactory.server 'ar7if4c70ry@c318a'
+                    def uploadSpec = '''
+                        {"files": [{
+                        "pattern": "**/gradle/wrapper/*.jar",
+                        "target": "libs-release-local/$JOB_NAME/build/"
+                        }]}'''
+
+                    def buildInfo = server.upload(uploadSpec)
+                    server.publishBuildInfo(buildInfo)
+                }
+            }
+        }
 
        stage('Despliegue'){
            when {
