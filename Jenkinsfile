@@ -52,7 +52,7 @@ pipeline {
                     def server = Artifactory.server 'ArtifactoryICCD'
                     def uploadSpec = '''
                         {"files": [{
-                        "pattern": "**/gradle/wrapper/*.jar",
+                        "pattern": "gradle/wrapper/*.jar",
                         "target": "example-repo-local/$JOB_NAME/build/"
                         }]}'''
 
