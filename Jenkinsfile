@@ -43,7 +43,7 @@ pipeline {
                       }
 				}
             }
-        }
+        
 
 	     stage('Publish') {
             steps{
