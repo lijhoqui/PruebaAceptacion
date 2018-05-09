@@ -34,13 +34,13 @@ pipeline {
            }
        }
 	   
-	
+
 
 	     stage('Publish') {
             steps{
                 echo '------------>Publish [Artifactory]<------------'
                 script{ //takes a block of Scripted Pipeline and executes that in the Declarative Pipeline
-                    def server = Artifactory.server 'ar7if4c70ry@c318a'
+                    def server = Artifactory.server 'http://localhost:8081/artifactory'
                     def uploadSpec = '''
                         {"files": [{
                         "pattern": "**/gradle/wrapper/*.jar",
@@ -80,7 +80,7 @@ pipeline {
                        reportName: 'Tests Repor']
 
             cucumber 'build/reports/tests/prueba/json/cucumber.json'
-           step([$class: 'Mailer', notifyEveryUnstableBuild: true, recipients: 'lina.quintero@ceiba.com.co', sendToIndividuals: true])
+
        }
    }
 }
